@@ -1,0 +1,534 @@
+/************ TABLE OF CONTENTS ***************
+1.   Fonts
+2.   Reset
+3.   Global - Settings
+4.   Header
+5.   Section - first
+6.   Section - about
+7.   Section - services
+8.   Section - more information
+9.   Depoimentos
+10. Footer
+************************************************************/
+
+/*
+-------
+Fonts
+-------
+*/
+
+/*font-family: 'Pacifico', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/*font-family: 'Bebas Neue', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/*font-family: 'Roboto', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+/*
+----------
+	Reset
+----------
+*/
+
+*{
+  padding: 0; 
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+/* 
+---------------------
+Global Settings
+---------------------
+*/
+
+html, body, main{
+ overflow-x: hidden;
+
+}
+
+
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style-type: none;
+}
+
+.main{
+  background-color:#F2F2F2;
+}
+
+.nav-link, a{
+  transition: all .5s;
+}
+
+.btn-success {
+  border-radius: 0rem;
+}
+
+:root{
+  --primary-color: #306EB5;/**/
+  --secondary-color: purple;/*#3A4C60*/
+  --tertiary-color:#404040;
+}
+
+/*
+----------
+Header 
+----------
+*/
+#header{
+background-color: var(--tertiary-color);
+}
+
+#header .header--link{
+  font-family: 'Pacifico', cursive;
+  font-size: 1.6em;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+#header .nav-link{
+  color: #fff;
+  font-size: 1.3em;
+}
+
+#header .nav-link:hover{
+  color: var(--primary-color);
+}
+
+.navbar-toggler{
+  background-color: #848586;
+}
+
+/* Large ≥ 992px */
+@media (min-width:78rem) {
+  #header .header--link{
+    font-size: 2.5em;
+  }
+}
+
+/*
+---------------
+section-first
+----------------
+*/
+#section-first{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem 0 1rem;
+}
+
+#section-first .s-first--box-image{
+  margin-top: 3rem;
+}
+
+#section-first .s-first--title{
+  color: var(--primary-color);
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3em;
+}
+
+#section-first .s-first--text{
+  font-size: 1.1em;
+  margin-bottom: 2rem;
+}
+
+/* Medium ≥ 768px */
+@media screen and (min-width:48rem) {
+  #section-first{
+    min-height: 50vh;
+  }
+
+  #section-first .s-first--text{
+    font-size: 1.3em;
+  }
+
+  #section-first .s-first--box-image{
+    margin-top: 0rem;
+  }
+}
+
+/* Large ≥ 992px */
+@media screen and (min-width:78rem) {
+  #section-first{
+    padding: 0 0 0 0;
+    min-height: 100vh;
+  }
+
+  #section-first .s-first--box-image{
+    margin-top: 0rem;
+  }
+
+  #section-first .s-first--title{
+    font-size: 4em;
+  }
+}
+/*
+---------------
+section-about
+----------------
+*/
+#section-about{
+ min-height: 100vh;
+ margin-top: 6rem;
+}
+
+.s-about--box-text .section-about--title{
+  font-size: 2em;
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 0.18rem;
+}
+
+.s-about--box-text .section-about--text{
+line-height: 2;
+font-size: 1.3em;
+margin-bottom: 2rem;
+}
+
+#section-about .section-about--image{
+  width: 30rem;
+}
+
+/* Large ≥ 992px */
+@media screen and (min-width:78rem) {
+  .s-about--box-text  .section-about--title{
+    font-size: 2.5em;
+  }
+}
+/*
+---------------------
+section-services
+----------------------
+*/
+#container-image .box--img-01{
+  background: url("../images/img_01.jpg") no-repeat center/cover;
+  height: 15rem;
+}
+
+#container-image .box--img-02{
+  background: url("../images/img_02.jpg") no-repeat center/cover;
+  height: 15rem;
+}
+
+#container-image .box--img-03{
+  background: url("../images/img_03.jpg") no-repeat center/cover;
+  height: 15rem;
+}
+
+#container-image .c-image--title{
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2em;
+  color: #fff;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  text-shadow: 3px 3px 8px var(--tertiary-color);
+  text-align: center;
+}
+
+#section-services{
+ min-height: 100vh;
+}
+
+#section-services .s-services--title{
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: 900;
+  color: var(--primary-color);
+  margin: 1rem 0 1rem 0;
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 0.2rem;
+}
+
+#section-services .s-services--text{
+  line-height: 2;
+  font-size: 1.3em;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.s-services--box-list .list-services li{
+ color: #848586;
+ font-weight: 800;
+ font-size: 1.3em;
+}
+
+.s-services--box-list .check{
+  background-color: #ca3840;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-bottom: 0.3rem;
+}
+
+.s-services--box-list  .check .fa-check{
+  color: #fff;
+  font-weight: 900;
+  font-size: 1.5em;
+}
+
+/* Medium ≥ 768px */
+@media screen and (min-width:48rem) {
+  #section-services .list-services{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #section-services{
+    min-height: 55vh;
+  }
+}
+
+/* Large ≥ 992px */
+@media screen and (min-width:78rem) {
+   #container-image .c-image--title{
+    font-size: 3em;
+  }
+
+  #section-services{
+    min-height: 100vh;
+  }
+
+  #section-services .s-services--title{
+    font-size: 2.3em;
+    text-align: start;
+    margin-top: 2.5rem;
+  }
+}
+
+/*
+---------------
+section-btn
+----------------
+*/
+#section-btn{
+  background-color: var(--tertiary-color);
+  color: #fff;
+  padding: 1rem;
+}
+
+#section-btn .section-btn--title{
+  font-weight: 900;
+  font-size: 2em;
+  margin-top: 2rem;
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 0.15rem;
+}
+
+#section-btn .section-btn--text{
+  font-size: 1.3em;
+  margin: 2rem 0 2rem 0;
+}
+
+/* Large ≥ 992px */
+@media screen and (min-width:78rem) {
+  #section-btn{
+    padding: 0 0 0 0;
+  }
+
+  #section-btn .section-btn--title{
+    font-size: 2.4em;
+    margin-top: 0rem;
+  }
+  
+  #section-btn .section-btn--text{
+    font-size: 1.4em;
+  }
+}
+
+/*
+---------------------------
+section depoimentos
+---------------------------
+*/
+#section-depoimentos {
+  min-height: 100vh;
+  padding: 2rem 0 0 0;
+}
+
+#s-depoimentos--text{
+  margin-bottom: 5rem;
+  padding-left: 1rem;
+}
+
+#s-depoimentos--text .depoimentos--title{
+  color: var(--primary-color);
+  font-size: 3em;
+  font-family: 'Pacifico', cursive;
+  margin-bottom: 1.8rem;
+}
+
+#s-depoimentos--text .depoimentos--subtitle{
+font-size: 1.5em;
+}
+
+#s-depoimentos--container{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  gap: 1rem;
+}
+
+#s-depoimentos--container .s-depoimentos--box{
+  background-color: #dfdfdf;
+  height: 13rem;
+  width: 90%;
+  padding-top: 3rem;
+  position: relative;
+  margin: 3rem auto;
+}
+
+#s-depoimentos--container .fa-star{
+  color: #F6BC32;
+  margin-bottom: 1.3rem;
+}
+
+#s-depoimentos--container .s-depoimentos--image{
+  width: 5rem;
+  height: 5rem;
+  background-color: var(--primary-color);
+  border-radius: 6rem;
+  position: absolute;
+  left: 37%;
+  top: -20%;
+}
+
+#s-depoimentos--container .s-depoimentos--img{
+  position: absolute;
+  left: 50%;
+  top: 52%;
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 0.12rem;
+  height: 1.625rem;
+  width: 1.625rem;
+}
+
+#s-depoimentos--container .s-depoimentos--title{
+font-weight: 900;
+margin-bottom: 0.5rem;
+}
+
+/* Medium ≥ 768px */
+@media screen and (min-width:48rem) {
+  #s-depoimentos--container{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+/* -------- Large ≥ 992px -------- */
+@media screen and (min-width:78rem) { 
+  #s-depoimentos--container{
+    grid-template-columns: repeat(3,1fr); 
+  }
+
+  #s-depoimentos--container .s-depoimentos--image{
+    left: 40%;
+    top: -20%;
+  }
+}
+
+/*
+---------
+bottom
+---------
+*/
+#bottom{
+  background-color: #DFDFDF;
+}
+
+#bottom .bottom--box{
+  margin-top: 1rem;
+  padding-left: 2rem;
+}
+
+#bottom .bottom--img{
+width: 10rem;
+}
+
+#bottom .bottom--title{
+  font-size: 1.3em;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  color: rgb(92, 91, 91);
+}
+
+#bottom .bottom--txt{
+  line-height: 0.7;
+}
+
+#credit-card{
+  background-color: var(--tertiary-color);
+  padding: 1rem;
+
+}
+
+.credit-card--text,.credit-card--title{
+  color: #c49703;  
+  font-weight: 900;
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 0.2rem;
+}
+
+#credit-card .credit-card--title{
+  font-size: 1.3em;
+}
+
+#credit-card .credit-card--text{
+  font-size: 1.2em;
+}
+
+#credit-card .credit-card--image{
+  width: 18em;
+}
+
+/* Large ≥ 992px */
+@media screen and (min-width:78rem) {
+  #credit-card{
+    padding: 2rem;
+  }
+
+  #bottom .bottom--box{
+    padding-left: 0rem;
+  }
+  
+  #credit-card .credit-card--text{
+    font-size: 1.8em;
+  }
+
+  #credit-card .credit-card--title{
+    font-size: 2em;
+  }
+  
+  #credit-card .credit-card--image{
+    width: 18rem;
+  }
+}
+
+/*
+---------
+Footer
+---------
+*/
+#footer{
+  background-color: var(--tertiary-color);
+  padding: 0.5rem;
+
+}
+
+#footer .footer--text{
+  font-size: 1.1em;
+  color: #dfdfdf;
+  padding: 0;
+  margin: 0;
+}
+
